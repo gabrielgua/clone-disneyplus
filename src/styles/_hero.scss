@@ -1,0 +1,76 @@
+@use 'var';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/hero_desktop.jpeg);
+    background-size: cover;
+}
+
+.content {
+    max-width: 640px;
+    text-align: center;
+
+    &__branding {
+        margin-inline: auto;
+        margin-bottom: 38px;
+        max-width: 320px;
+    }
+
+    .title--small {
+        margin-bottom: 64px;
+    }
+
+    &__link {
+        margin-bottom: 20px;
+    }
+
+    &__combos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem; 
+    }
+
+    &__disclaimer {
+        margin-top: 40px;
+    }
+}
+
+.combo {
+    width: 50%;
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    &__img {
+        width: 100%;
+        display: block;
+
+        &--smaller {
+            margin-top: 10px;
+            max-width: 130px;
+        }
+    }     
+
+    &__button {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+        color: var.$clr-text-secondary;
+        background-color: #6421FF;
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: auto;
+        align-self: flex-end;
+        margin-bottom: 8px;
+        border: none;
+    }
+
+
+
+    
+}
+
